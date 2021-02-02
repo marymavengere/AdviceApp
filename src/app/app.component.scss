@@ -1,0 +1,138 @@
+$blue: #00b0ff;
+$background: #fff; 
+$grey: rgb(73, 73, 73);
+$btn: #ffc107;
+$errorbox: #ffe0e0;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.advice-toolbar{
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    background-color: $blue;
+} 
+// Small devices (landscape phones, 576px and up)
+@media (max-width:  576px) { 
+    span {
+        font-size: 12px !important;
+         }
+ }
+
+ @media (max-width:  700px) { 
+    span {
+        font-size: 12px !important;
+         }
+ }
+span{
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.advice-card{
+    display: block;
+    top:80px;
+    position: relative;
+    padding:20px;
+    margin: 40px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: .25rem!important;
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: $background;
+}
+h3{
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: $grey; 
+ 
+}
+
+p{
+ font-family: Arial, Helvetica, sans-serif;
+ text-align: left;
+ font-size: 16px;
+
+}
+
+.btn{
+  color: #212529;
+  background-color: $btn;
+  display: inline-block;
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #effd5f ;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+ // transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn:active{
+    border: 1px solid $btn;
+    background-color: #effd5f ;
+}
+
+.search{
+    display: block;
+    position: relative;
+    float:right !important;
+    width: 50%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.upper-top{
+    display: inline-block;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.lucky-Advice {
+    display: none;
+}
+#error-Search{
+   display: none;
+}
+.advice-card-header{
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+    margin: 15px -20px -20px -20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 16px;
+}
+.error-message-box{
+   color: #ba3939;
+   border: 1px solid #a33a3a;
+   background-color: $errorbox;
+   padding: .75rem 1.25rem;
+}
